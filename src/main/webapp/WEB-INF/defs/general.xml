@@ -6,10 +6,33 @@
 <tiles-definitions>
   <definition name="common" template="/WEB-INF/layout/classic.jsp">
     <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+   
   </definition>
   
    <definition name="index" extends="common">
     <put-attribute name="title" value="My Training 1" />
     <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index"></put-attribute>
   </definition>
+  
+   <definition name="students" extends="common">
+    <put-attribute name="title" value="My Training 1" />
+    <put-attribute name="body" value="/WEB-INF/jsp/student.jsp" />
+    <put-attribute name="current" value="students"></put-attribute>
+  </definition>
+  
+  
+  <definition name="student-details" extends="common">
+    <put-attribute name="title" value="Student detail" />
+    <put-attribute name="body" value="/WEB-INF/jsp/student-detail.jsp" />
+    <put-attribute name="current" value="students"></put-attribute>
+  </definition>
+  
+   <definition name="student-registration" extends="common">
+    <put-attribute name="title" value="Student Registration" />
+    <put-attribute name="body" value="/WEB-INF/jsp/student-registration.jsp" />
+    <put-attribute name="current" value="student-reg"></put-attribute>
+  </definition>
+  
+  
 </tiles-definitions>
